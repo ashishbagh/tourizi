@@ -1,0 +1,511 @@
+<html lang="en"><head>
+  <title>Tourizi</title>
+  <meta charset="utf-8">
+  <meta name="keywords" content="Tourizi,Indore,Indore Package,Taxi,Cab,Tour,Holiday,tourizi.in">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href="src/Lato.css" rel="stylesheet" type="text/css">
+  <link href="src/Montserrat.css" rel="stylesheet" type="text/css">
+  <script type="text/javascript" async="" src="https://certify-js.alexametrics.com/atrk.js"></script><script src="src/jquery.min.js"></script>
+  <script src="src/bootstrap.min.js"></script>
+  <style>
+  body {
+      font: 400 15px/1.8 Lato, sans-serif;
+      color: #777;
+  }
+  h3, h4 {
+      margin: 10px 0 30px 0;
+      letter-spacing: 10px;      
+      font-size: 20px;
+      color: #111;
+  }
+  .container {
+      padding:30px;
+  }
+
+  .col-sm-4:hover {
+    box-shadow: 5px 0px 40px rgba(0,0,0, .2);
+}
+  
+  .carousel-inner img {
+     /* -webkit-filter: grayscale(90%);
+      filter: grayscale(90%); /* make all photos black and white */ 
+      width: 100%; /* Set width to 100% */
+      margin: auto;
+  }
+
+  .carousel-caption h3 {
+      color: #fff !important;
+  }
+  @media (max-width: 600px) {
+    .carousel-caption {
+      display: none; /* Hide the carousel text when the screen is less than 600 pixels wide */
+    }
+  }
+  .bg-1 {
+      background: #2d2d30;
+      color: #bdbdbd;
+  }
+  .bg-1 h3 {color: #fff;}
+  .bg-1 p {font-style: italic;}
+  .list-group-item:first-child {
+      border-top-right-radius: 0;
+      border-top-left-radius: 0;
+  }
+  .list-group-item:last-child {
+      border-bottom-right-radius: 0;
+      border-bottom-left-radius: 0;
+  }
+  .thumbnail {
+      padding: 0 0 15px 0;
+      border: none;
+      border-radius: 0;
+  }
+  .thumbnail p {
+      margin-top: 15px;
+      color: #555;
+  }
+  .btn {
+      padding: 10px 20px;
+      background-color: #333;
+      color: #f1f1f1;
+      border-radius: 0;
+      transition: .2s;
+  }
+  .btn:hover, .btn:focus {
+      border: 1px solid #333;
+      background-color: #fff;
+      color: #000;
+  }
+  .modal-header, h4, .close {
+      background-color: #333;
+      color: #fff !important;
+      text-align: center;
+      font-size: 30px;
+  }
+  .modal-header, .modal-body {
+      padding: 40px 50px;
+  }
+  .nav-tabs li a {
+      color: #777;
+  }
+  #googleMap {
+      width: 100%;
+      height: 400px;
+      -webkit-filter: grayscale(100%);
+      filter: grayscale(100%);
+  }  
+  .navbar {
+      font-family: Montserrat, sans-serif;
+      margin-bottom: 0;
+      background-color: #2d2d30;
+      border: 0;
+      font-size: 11px !important;
+      letter-spacing: 4px;
+      opacity: 0.9;
+  }
+  .navbar li a, .navbar .navbar-brand { 
+      color: #d5d5d5 !important;
+  }
+  .navbar-nav li a:hover {
+      color: #fff !important;
+  }
+  .navbar-nav li.active a {
+      color: #fff !important;
+      background-color: #29292c !important;
+  }
+  .navbar-default .navbar-toggle {
+      border-color: transparent;
+  }
+  .open .dropdown-toggle {
+      color: #fff;
+      background-color: #555 !important;
+  }
+  .dropdown-menu li a {
+      color: #000 !important;
+  }
+  .dropdown-menu li a:hover {
+      background-color: red !important;
+  }
+  footer {
+      background-color: #2d2d30;
+      color: #f5f5f5;
+      padding: 32px;
+  }
+  footer a {
+      color: #f5f5f5;
+  }
+  footer a:hover {
+      color: #777;
+      text-decoration: none;
+  }  
+  .form-control {
+      border-radius: 0;
+  }
+  textarea {
+      resize: none;
+  }
+  </style>
+  <!-- Start Alexa Certify Javascript -->
+<script type="text/javascript">
+_atrk_opts = { atrk_acct:"YrWAq1hNdI20fn", domain:"tourizi.in",dynamic: true};
+(function() { var as = document.createElement('script'); as.type = 'text/javascript'; as.async = true; as.src = "https://certify-js.alexametrics.com/atrk.js"; var s = document.getElementsByTagName('script')[0];s.parentNode.insertBefore(as, s); })();
+</script>
+<noscript><img src="https://certify.alexametrics.com/atrk.gif?account=YrWAq1hNdI20fn" style="display:none" height="1" width="1" alt="" /></noscript>
+<!-- End Alexa Certify Javascript -->  
+</head>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50" cz-shortcut-listen="true">
+
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#myPage">Tourizi</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li class="active"><a href="#myPage">HOME</a></li>
+        <li><a href="#Indore">PACKAGES</a></li>
+        <li><a href="#contact">CONTACT</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class=""></li>
+      <li data-target="#myCarousel" data-slide-to="1" class=""></li>
+      <li data-target="#myCarousel" data-slide-to="2" class=""></li>
+      <li data-target="#myCarousel" data-slide-to="3" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="4" class=""></li>
+      <li data-target="#myCarousel" data-slide-to="5" class=""></li>
+      <li data-target="#myCarousel" data-slide-to="6" class=""></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+      <div class="item">
+        <img src="images/indb.jpg" alt="Chicago" width="1200" height="350">
+        <div class="carousel-caption">
+          <h3>Indore</h3>
+        </div>
+      </div>
+      <div class="item">
+        <img src="images/andaman_nico.jpg" alt="andaman_nico" width="1200" height="350">
+        <div class="carousel-caption">
+          <h3>Andaman and Nicobar</h3>
+        </div>      
+      </div>
+      <div class="item">   
+        <img src="images/ujjain.jpg" alt="Ujjain" width="1200" height="350">
+        <div class="carousel-caption">
+          <h3>Ujjain</h3>
+        </div>    
+      </div>
+      <div class="item active">
+        <img src="images/Pachmarhi.jpg" alt="Pachmarhi" width="1200" height="350">
+        <div class="carousel-caption">
+          <h3>Pachmarhi</h3>
+        </div>      
+      </div>
+      <div class="item">
+        <img src="images/hanuwantiya.jpg" alt="Hanuwantiya" width="1200" height="350">
+        <div class="carousel-caption">
+          <h3>Hanuwantiya</h3>
+        </div>      
+      </div>
+      <div class="item">
+        <img src="images/Mandava.jpg" alt="Mandav" width="1200" height="350">
+        <div class="carousel-caption">
+          <h3>Mandava</h3>
+        </div>      
+      </div>
+      <div class="item">
+        <img src="images/Shirdi.jpg" alt="Mandav" width="1200" height="350">
+        <div class="carousel-caption">
+          <h3>Shirdi</h3>
+        </div>      
+      </div>
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+</div>
+
+<!-- Container (The Indore Packages) -->
+<div id="Indore" class="container text-center">
+  <h3>Tourizi</h3>
+  <h4 style="display:none;">Tourizi Indore Packages</h4>
+  <p><em>Travel places near Indore with us!</em></p>
+  <p>Indore is a city in west-central India. It’s known for the 7-story Rajwada Palace and the Lal Baag Palace, which date back to Indore’s 19th-century Holkar dynasty. The Holkar rulers are honored by a cluster of tombs and cenotaphs at Chhatri Baag. The night market Sarafa Bazar sells street food. East is the Indo-Gothic Gandhi Hall and clock tower..</p>
+  <br>
+</div>
+
+<!-- Container (TOUR Section) -->
+<div id="tour" class="bg-1">
+  <div class="container">
+    <h3 class="text-center">Tourizi Indore Packages</h3>
+    <p class="text-center">lets give us a chance to show you.<br> Remember to book your Package!</p>
+    <!-- Torizi Combos Start -->
+    <ul class="nav nav-tabs">
+    <li class="active"><a data-toggle="tab" href="#standard">Standard Package Tourizi Combo</a></li>
+     <li><a data-toggle="tab" href="#deluxe">Deluxe Package Tourizi Combo</a></li>
+     <li><a data-toggle="tab" href="#premium">Premium Package Tourizi Combo</a></li>
+  </ul>
+  <div class="tab-content">
+    <div id="standard" class="tab-pane fade in active">
+      <h2>Standard Tourizi Package</h2>
+      <div>1-Indore,Omkareshwar,Maheswar,Ujjain 2N/3D - ₹11999</div>
+      <div>2-Indore,Omkareshwar,Maheswar,Ujjain,Mandav 3N/4D - ₹15999</div>
+      <div>3-Shirdi,Shani Shingnapur,Trimbakeshwar  2N/3D - 17999₹</div>
+    </div>
+    <div id="deluxe" class="tab-pane fade">
+      <h2>Deluxe Tourizi Package</h2>
+      <div>1-Indore,Omkareshwar,Maheswar,Ujjain 2N/3D - ₹13599</div>
+      <div>2-Indore,Omkareshwar,Maheswar,Ujjain,Mandav 3N/4D - ₹17999</div>
+    </div>
+    <div id="premium" class="tab-pane fade">
+      <h2>Premium Tourizi Package</h2>
+       <div>1-Indore,Omkareshwar,Maheswar,Ujjain 2N/3D - ₹17999</div>
+       <div>2-Indore,Omkareshwar,Maheswar,Ujjain,Mandav 3N/4D - ₹23999</div>
+    </div>
+  </div>
+</div>
+</div>
+    <!-- Torizi Combos Start End -->
+ <div id="touriziPackage" class="bg-1">
+  <div class="container">
+  <p>Book Taxi From Tourizi Travel</p>
+  <div class="thumbnail">
+  <img src="images/taxi_block.jpg" alt="Taxi">
+  <div class="caption"> 
+        We are one of the most reliable Cab Services in Indore offering the best rates for Cabs in Indore.
+        Simply call us at <p>+91-9131060227,+919993520455</p> or send email at <p>tourizi.travels@gmail.com</p>
+        Now you can enjoy our Luxury Cabs @ cheapest rate.
+        We promise to give you the best Taxi Service in Indore.</div>
+  </div>
+</div>
+  <div class="container">
+    <div class="row text-center">
+      <div class="col-sm-4">
+        <div class="thumbnail">
+          <img src="images/buy_ujjain.jpg" style="height:225px;" width="400" height="300">
+          <p><strong>Ujjain</strong></p>
+           <button class="btn" data-toggle="modal" id="Ujjain" data-target="#myModal">Get Details</button>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="thumbnail">
+          <img src="images/buy_hanuwantiya.jpg" style="height:225px;" width="400" height="300">
+          <p><strong>Hanumantiya</strong></p>
+          <button class="btn" data-toggle="modal" id="Hanumantiya" data-target="#myModal">Get Details</button>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="thumbnail">
+          <img src="images/buy_maheshwar.png" style="height:225px;" width="400" height="300">
+          <p><strong>Maheswar</strong></p>
+          <button class="btn" data-toggle="modal" id="Maheswar" data-target="#myModal">Get Details</button>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="thumbnail">
+          <img src="images/buy_mandav.jpg" style="height:225px;" width="400" height="300">
+          <p><strong>Mandav</strong></p>
+          <button class="btn" data-toggle="modal" id="Mandav" data-target="#myModal">Get Details</button>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="thumbnail">
+          <img src="images/buy_Shirdi.jpg" style="height:225px;" width="400" height="300">
+          <p><strong>Shirdi</strong></p>
+          <button class="btn" data-toggle="modal" id="Shirdi" data-target="#myModal">Get Details</button>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="thumbnail">
+          <img src="images/buy_omkar.jpg" style="height:225px;" width="400" height="300">
+          <p><strong>Omkareshwar</strong></p>
+          <button class="btn" data-toggle="modal" id="Omkareshwar" data-target="#myModal">Get Details</button>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="thumbnail">
+          <img src="images/buy_Pachmarhi.jpg" style="height:225px;" width="400" height="300">
+          <p><strong>Pachmarhi</strong></p>
+          <button class="btn" data-toggle="modal" id="Pachmarhi" data-target="#myModal">Get Details</button>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="thumbnail">
+          <img src="images/buy_andamanAndNico.jpg" style="height:225px;" width="400" height="300">
+          <p><strong>Andaman And NicoBar</strong></p>
+          <button class="btn" data-toggle="modal" id="AndamanAndNicoBar" data-target="#myModal">Get Details</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">×</button>
+          <h4><span class="glyphicon glyphicon-lock"></span>Package</h4>
+        </div>
+        <div class="modal-body">
+          <div>
+            <div class="form-group">
+              <label for="psw"><span class="glyphicon glyphicon-shopping-cart"></span>Please send us detail we will contact you</label>
+              <input type="number" name="members" class="form-control" id="queryMember" placeholder="How many?">
+            </div>
+            <div class="form-group">
+              <label for="mobile"><span class="glyphicon glyphicon-user"></span>Mobile no</label>
+              <input type="text" name="mobile" class="form-control" id="queryMobile" placeholder="Mobile number">
+            </div>
+            <div class="form-group">
+              <label for="usrname"><span class="glyphicon glyphicon-user"></span> Send To</label>
+              <input type="text" name="email" class="form-control" id="queryEmail" placeholder="Enter email">
+            </div>
+              <button type="submit" id="querySubmit" class="btn btn-block">Send
+                <span class="glyphicon glyphicon-ok"></span>
+              </button>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="submit" class="btn btn-danger btn-default pull-left" data-dismiss="modal">
+            <span class="glyphicon glyphicon-remove"></span> Cancel
+          </button>
+          <p>Need <a href="#">help?</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Container (Contact Section) -->
+<div id="contact" class="container">
+  <h3 class="text-center">Contact</h3>
+  <div class="row">
+    <div class="col-md-4">
+      <p>More questions? Drop a note.</p>
+      <p><span class="glyphicon glyphicon-map-marker"></span>Indore,MP</p>
+      <p><span class="glyphicon glyphicon-phone"></span>Phone:+91-9131060227,9993520455</p>
+      <p><span class="glyphicon glyphicon-envelope"></span>Email:tourizi.travels@gmail.com</p>
+    </div>
+    <div class="col-md-8">
+      <div class="row">
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="name" name="name" placeholder="Name" type="text" required="">
+        </div>
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="email" name="email" placeholder="Email" type="email" required="">
+        </div>
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="mobile" name="mobile" placeholder="Mobile" type="mobile" required="">
+        </div>
+      </div>
+      <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea>
+      <br>
+      <div class="row">
+        <div class="col-md-12 form-group">
+          <button class="btn pull-right" id="submit" type="submit">Send</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br>
+</div>
+<!-- Footer -->
+<footer class="text-center">
+  <a class="up-arrow" href="#myPage" data-toggle="tooltip" title="" data-original-title="TO TOP">
+    <span class="glyphicon glyphicon-chevron-up"></span>
+  </a><br><br> 
+</footer>
+
+<script>
+$(document).ready(function(){
+  // Initialize Tooltip
+  $('[data-toggle="tooltip"]').tooltip(); 
+  var place ;
+
+  $("#Ujjain").on('click',function(){ place = "Ujjain"});
+  $("#Hanumantiya").on('click',function(){ place = "Hanumantiya"});
+  $("#Maheswar").on('click',function(){ place = "Maheswar"});
+  $("#Mandav").on('click',function(){ place = "Mandav"});
+  $("#Shirdi").on('click',function(){ place = "Omkareshwar"});
+  $("#Omkareshwar").on('click',function(){ place = "Omkareshwar"});
+  function sendDetails(detailQuery){
+     $.ajax({
+      method: "POST",
+      url:"https://script.google.com/macros/s/AKfycbxWsjj7qei9ieLm_lodb2xOmF-OQ24uvLF535m7H9S6xreXrlV2/exec",
+      data: detailQuery
+    });
+  }
+
+  $("#submit").on('click',function(oEvent){
+   var detailQuery = { name: $('#name')[0].value, email:$('#email')[0].value,mobile: $('#mobile')[0].value,comments:$('#comments')[0].value,members:"",package:""};
+    sendDetails(detailQuery);
+    $('#name')[0].value = "";
+    $('#email')[0].value = "";
+    $('#mobile')[0].value = "";
+    $('#comments')[0].value = "";
+
+    detailQuery = {};
+
+  });
+
+  $("#querySubmit").on('click',function(oEvent){
+   var  detailQuery = {name: "",email:$('#queryEmail')[0].value,mobile: $('#queryMobile')[0].value,members:$('#queryMember')[0].value,package:place,comments:""};
+      sendDetails(detailQuery);
+      $('#queryEmail')[0].value = "";
+      $('#queryMobile')[0].value = "";
+      $('#queryMember')[0].value = "";
+      detailQuery = {};
+  });
+  
+  // Add smooth scrolling to all links in navbar + footer link
+  $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 900, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+})
+</script>
+
+
+
+</body></html>
